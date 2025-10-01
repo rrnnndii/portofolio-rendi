@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flask While Loop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='looping/while/tebak angka/style.css')}}"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+          Grandy <span>Samie</span>
+        </div>
+        <div class="links">
+          <div
+            class="link active"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="100"
+          >
+            <a href="/#home">Home</a>
+          </div>
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="200"
+          >
+            <a href="/#about">About</a>
+          </div>
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+          >
+            <a href="/#skill">Skills</a>
+          </div>
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+          >
+            <a href="/project">Project</a>
+          </div>
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+          >
+            <a href="/#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+
+      <div class="dropdown">
+        <div class="links">
+          <a href="/#home">Home</a>
+          <a href="/#about">About</a>
+          <a href="/#skill">Skills</a>
+          <a href="/project">project</a>
+          <a href="/#contact">Contact</a>
+          <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        </div>
+      </div>
+    </nav>
+    <div class="form">
+      <form method="post">
+        <h1>Game Tebak Angka</h1>
+        <br /><br />
+        <div class="form">
+          <form method="post" action="/tebak">
+            <label><h3>Silahkan Tebak Angka Antara 1 - 100</h3></label>
+            <input
+              type="number"
+              name="grandy_tebak"
+              min="1"
+              max="100"
+              required
+            /><br /><br />
+            <button type="submit">Tebak</button>
+          </form>
+
+          {% if grandy_hasil %}
+          <p><strong>{{grandy_hasil}}</strong></p>
+          {% endif %}
+        </div>
+      </form>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 0 });
+    </script>
+    <script src="../../../../static/index/js/script.js"></script>
+  </body>
+</html>

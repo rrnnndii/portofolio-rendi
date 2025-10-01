@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="{{url_for('static',filename='project/style.css')}}">
+</head>
+<body>
+      <nav>
+          <div class="nav-container">
+              <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                  Grandy <span>Samie</span>
+              </div>
+              <div class="links">
+                  <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a
+                          href="/#home">Home</a></div>
+                  <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a
+                          href="/#about">About</a></div>
+                  <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a
+                          href="/#skill">Skills</a></div>
+                  <div class="link active" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a
+                          href="#project">Project</a></div>
+                  <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a
+                          href="/#contact">Contact</a></div>
+              </div>
+          </div>
+
+          <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+
+          <div class="dropdown">
+              <div class="links">
+                  <a href="/#home">Home</a>
+                  <a href="/#about">About</a>
+                  <a href="/#skill">Skills</a>
+                  <a href="/#project">project</a>
+                  <a href="/#contact">Contact</a>
+                  <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+              </div>
+          </div>
+      </nav>
+
+    <section id="project">
+        <div class="project-container">
+            <div class="project-content">
+                <div class="project-header" data-aos="fade-right" data-aos-duration="1500">
+                    <h1>Runtutan</h1>
+                </div>
+                <div class="project-box" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500">
+                    <div class="box" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="500" onclick="location.href='/biodata'">
+                        <i class="fas fa-user"></i>
+                        <a href="/biodata"><h3>Biodata</h3></a>
+                    </div>                      
+                    <div class="box" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="500" onclick="location.href='/gajiruntutan'">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <a href="/gajiruntutan"><h3>Gaji</h3></a>
+                    </div>                      
+                    <div class="box" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="500" onclick="location.href='/bangundatar'">
+                        <i class="fas fa-drafting-compass"></i>
+                        <a href="/bangundatar"><h3>Bangun Datar</h3></a>
+                    </div>                      
+                    <div class="box" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="500" onclick="location.href='/suhu'">
+                        <i class="fas fa-thermometer-half"></i>
+                        <a href="/suhu"><h3>Suhu</h3></a>
+                    </div>                      
+                    <div class="box" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="500" onclick="location.href='/kalkulator'">
+                        <i class="fas fa-calculator"></i>
+                        <a href="/kalkulator"><h3>Kalkulator</h3></a>
+                    </div>                      
+                </div>
+            </div>
+        </div>
+        <div class="project-container">
+            <div class="project-content">
+                <div class="project-header" data-aos="fade-right" data-aos-duration="1500">
+                    <h1>IF Else</h1>
+                </div>
+                <div class="project-box" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500">
+                    <div class="box" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="500" onclick="location.href='/beasiswa'">
+                        <i class="fas fa-graduation-cap"></i>
+                        <a href="/beasiswa"><h3>Beasiswa</h3></a>
+                    </div>                      
+                    <div class="box" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="500" onclick="location.href='/belanja'">
+                        <i class="fas fa-shopping-cart"></i>
+                        <a href="/belanja"><h3>Belanja</h3></a>
+                    </div>                      
+                    <div class="box" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="500" onclick="location.href='/nilai'">
+                        <i class="fas fa-star"></i>
+                        <a href="/nilai"><h3>nilai</h3></a>
+                    </div>                      
+                    <div class="box" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="500" onclick="location.href='/pemesanan'">
+                        <i class="fas fa-box-open"></i>
+                        <a href="/pemesanan"><h3>pemesanan</h3></a>
+                    </div>                      
+                    <div class="box" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="500" onclick="location.href='/strukB'">
+                        <i class="fas fa-receipt"></i>
+                        <a href="/strukB"><h3>Struk Belanja</h3></a>
+                    </div>                      
+                </div>
+            </div>
+        </div>
+        <div class="project-container">
+            <div class="project-content">
+                <div class="project-header" data-aos="fade-right" data-aos-duration="1500">
+                    <h1>Nested IF</h1>
+                </div>
+                <div class="project-box" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500">
+                    <div class="box" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="500" onclick="location.href='/cuaca'">
+                        <i class="fas fa-cloud-sun"></i>
+                        <a href="/cuaca"><h3>cuaca</h3></a>
+                    </div>                      
+                    <div class="box" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="500" onclick="location.href='/gaji'">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <a href="/gaji"><h3>gaji</h3></a>
+                    </div>                      
+                    <div class="box" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="500" onclick="location.href='/ifbnilai'">
+                        <i class="fas fa-star"></i>
+                        <a href="/ifbnilai"><h3>nilai</h3></a>
+                    </div>                      
+                    <div class="box" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="500" onclick="location.href='/internet'">
+                        <i class="fas fa-star"></i>
+                        <a href="/internet"><h3>internet</h3></a>
+                    </div>                                          
+                </div>
+            </div>
+        </div>
+        <div class="project-container">
+            <div class="project-content">
+                <div class="project-header" data-aos="fade-right" data-aos-duration="1500">
+                    <h1>Looping For</h1>
+                </div>
+                <div class="project-box" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500">
+                    <div class="box" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="500" onclick="location.href='/operasi'">
+                        <i class="fas fa-cloud-sun"></i>
+                        <a href="/operasi"><h3>operasi</h3></a>
+                    </div>                      
+                    <div class="box" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="500" onclick="location.href='/ganjilgenap'">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <a href="/ganjilgenap"><h3>ganjil genap</h3></a>
+                    </div>                      
+                    <div class="box" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="500" onclick="location.href='/cek3'">
+                        <i class="fas fa-star"></i>
+                        <a href="/cek3"><h3>cek kelipatan 3</h3></a>
+                    </div>                      
+                    <div class="box" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="500" onclick="location.href='/cek25'">
+                        <i class="fas fa-star"></i>
+                        <a href="/cek25"><h3>cek kelipatan 2 dan 5</h3></a>
+                    </div>                                          
+                    <div class="box" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="500" onclick="location.href='/barang'">
+                        <i class="fas fa-star"></i>
+                        <a href="/indexbarang"><h3>pembelian barang</h3></a>
+                    </div>                                          
+                </div>
+            </div>
+        </div>
+        <div class="project-container">
+            <div class="project-content">
+                <div class="project-header" data-aos="fade-right" data-aos-duration="1500">
+                    <h1>Looping While</h1>
+                </div>
+                <div class="project-box" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500">
+                    <div class="box" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="500" onclick="location.href='/cek4'">
+                        <i class="fas fa-cloud-sun"></i>
+                        <a href="/cek4"><h3>cek kelipatan 4</h3></a>
+                    </div>                      
+                    <div class="box" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="500" onclick="location.href='/tebak'">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <a href="/tebak"><h3>Tebak Angka</h3></a>
+                    </div>                                                                
+                    <div class="box" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="500" onclick="location.href='/angka'">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <a href="/angka"><h3>Angka</h3></a>
+                    </div>                                                                
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+</form>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0, });
+    </script>
+    <script src="../../static/index/js/script.js"></script>
+</body>
+</html>

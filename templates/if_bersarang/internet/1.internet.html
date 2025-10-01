@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>biodata</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='if_bersarang/internet/style.css')}}"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+          Grandy <span>Samie</span>
+        </div>
+        <div class="links">
+          <div
+            class="link active"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="100"
+          >
+            <a href="/#home">Home</a>
+          </div>
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="200"
+          >
+            <a href="/#about">About</a>
+          </div>
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+          >
+            <a href="/#skill">Skills</a>
+          </div>
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+          >
+            <a href="/project">Project</a>
+          </div>
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+          >
+            <a href="/#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+
+      <div class="dropdown">
+        <div class="links">
+          <a href="/#home">Home</a>
+          <a href="/#about">About</a>
+          <a href="/#skill">Skills</a>
+          <a href="/project">project</a>
+          <a href="/#contact">Contact</a>
+          <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        </div>
+      </div>
+    </nav>
+
+    <div class="form">
+      <form method="post">
+        <h1>Internet</h1>
+        <table class="table1">
+          <tr>
+            <td>nama pelanggan :</td>
+            <td><input type="text" name="namaGrandy" required /></td>
+          </tr>
+          <tr>
+            <td>kecepatan Paket :</td>
+            <td><input type="number" name="kecepatanGrandy" required /></td>
+          </tr>
+          <tr>
+            <td>Kuota Bulanan :</td>
+            <td><input type="number" name="kuotaGrandy" required /></td>
+          </tr>
+          <tr>
+            <td>Lama berlangganan :</td>
+            <td>
+              <input type="number" name="berlanggananGrandy" required /> Tahun
+            </td>
+          </tr>
+
+          <tr>
+            <td>Pembayaran Tepat waktu :</td>
+            <td>
+              <select name="pembayaranGrandy" id="pembayaran" required>
+                <option value="Ya">Ya</option>
+                <option value="Tidak">Tidak</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="/project">Kembali</a></td>
+            <td><input type="submit" value="simpan" class="submit" /></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 0 });
+    </script>
+    <script src="../../../static/index/js/script.js"></script>
+  </body>
+</html>
